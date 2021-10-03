@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--favicon-->
+<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+  <title>EduHub</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <a href="https://icons8.com/icon/81076/rotate-left"></a>
+    <link rel="stylesheet" href="font-awesome.min.css">
+
+
+    <!--Google font-->
+    <link rel="preconnect" href="https//fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Festive&family=Fuggles&family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;700&family=Roboto%family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    </head>
+</html>
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="conatiner-fluid">
+          <a class="navbar-brand py-0" href="#"><img class="images" src="EduHub (2).png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        </div>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link active py-0" href="#home">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active py-0" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link active py-0" href="#community">Community</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active py-0" href="#courses">Courses</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active py-0" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <button class="open-button" onclick="openForm()">Sign in</button>
+
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+            </li>
+
+            </ul>
+            </div>
+            </nav>
+            <!--carousel-->
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" id="home">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="carousel/img1.jpg" alt="First slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="carousel/img2.jpg" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="carousel/img3.jpg" alt="Third slide">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+              <!--carousel ends-->
+              <div class="first_section_data">
+                  <div class="row">
+                      <div class="col-lg-9">
+                          <div class="infotext">
+                              <h2 class="first-h1">Learn Without Limits!</h2>
+                              <p class="para-1">Take the next step in your career with a world class learning experience</p>
+                              <a href="#"> <button class="first_section_button2 btn-lg" type="button" name="button">Join Now</button></a>
+                              <a href="#"> <button class="first_section_button2 btn-lg" type="button" name="button">Try EduHub</button></a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+        <hr>
+        <!--Section-->
+        <h3 class="headh3" id="courses">Professionals Certificates</h3>
+        <br>
+        <h1 class="head">Get job-ready for an in-demand career</h1>
+        <p class="paraa">Break into a new field like information technology or data science.No prior experience necessary to get started.</p>
+
+
+       <!--Carousel Wrapper-->
+        <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+ 
+          <div class="controls-top">
+            <a class="btn-floating" href="#multi-item-example" data-slide="prev"><img src="https://img.icons8.com/material-sharp/64/000000/circled-left--v2.png"/></a>
+            <a class="btn-floating" href="#multi-item-example" data-slide="next"><img src="https://img.icons8.com/material-sharp/64/000000/circled-right.png"/></i></a>
+          </div>
+  <!--Indicators-->
+          <ol class="carousel-indicators">
+            <li data-target="#multi-item-example" data-slide-to="1" class="active"></li>
+            <li data-target="#multi-item-example" data-slide-to="2"></li>
+            <li data-target="#multi-item-example" data-slide-to="3"></li>
+            
+          </ol>
+  <!--/.Indicators-->
+
+  <!--Slides-->
+      <div class="carousel-inner" role="listbox">
+
+    <!--First slide-->
+    <div class="carousel-item active">
+
+      <div class="col-md-3" style="float:left">
+       <div class="card mb-2">
+        <img class="card-img-top"
+            src="cards/cards1.jpg" alt="Card image cap">
+          <div class="card-body">
+            <img class="img1" src="cards/EH (1).png">
+            <h4 class="card-title">Google Data Analytics</h4>
+            <p class="card-text">Google</p>
+            <br>
+            <br>
+            <p class="par1">Professional Certificates</p>
+          <a class="btn btn-info" style="font-weight:bolder;color:black;"href="course1.html">Courses</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3" style="float:left">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="cards/cards2.jpg" alt="Card image cap">
+          <div class="card-body">
+            <img class="img1" src="cards/EH (1).png">
+            <h4 class="card-title">Google IT Support</h4>
+            <p class="card-text">Google</p>
+            <br>
+            <br>
+            <p class="par1">Professional Certificates</p>
+            <a class="btn btn-info"style="font-weight:bolder;color:black;" href="course2.html">Courses</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3" style="float:left">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="cards/cards3.jpg" alt="Card image cap">
+          <div class="card-body">
+            <img class="img1" src="cards/EH (1).png">
+            <h4 class="card-title">Project Management</h4>
+            <p class="card-text">Google</p>
+            <br>
+            <br>
+            <p class="par1">Professional Certificates</p>
+            <a class="btn btn-info"style="font-weight:bolder;color:black;" href="course3.html">Courses</a>
+          </div>
+        </div>
+      </div>
+      
+       <div class="col-md-3" style="float:left">
+       <div class="card mb-2">
+          <img class="card-img-top"
+            src="cards/cards4.jpg" alt="Card image cap">
+          <div class="card-body">
+            <img class="img1" src="cards/EH (1).png">
+            <h4 class="card-title">UX Designer</h4>
+            <p class="card-text">Google</p>
+            <br>
+            <br>
+            <p class="par1">Professional Certificates</p>
+            <a class="btn btn-info" style="font-weight:bolder;color:black;" href="course4.html">Courses</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!--/.First slide-->
+    <!--Second slide-->
+    <div class="carousel-item">
+
+      <div class="col-md-3" style="float:left">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="cards/cards5.jpg" alt="Card image cap">
+          <div class="card_body">
+            <img class="img1" src="cards/EH (1).png">
+            <h4 class="card-title">Data Science</h4>
+            <p class="card-text">IBM</p>
+            <br>
+            <br>
+            <p class="par1">Professional Certificates</p>
+            <a class="btn btn-info"style="font-weight:bolder;color:black;" href="course5.html">Courses</a>
+            <br>
+            <br>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3" style="float:left">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="cards/cards6.jpg" alt="Card image cap">
+          <div class="card_body">
+            <img class="img1" src="cards/EH (1).png">
+            <h4 class="card-title">Social Media Marketing</h4>
+            <p class="card-text">Facebook</p>
+            <br>
+            <br>
+            <p class="par1">Professional Certificates</p>
+            <a class="btn btn-info" style="font-weight:bolder;color:black;" href="course6.html">Courses</a>
+            <br>
+            <br>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3" style="float:left">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="cards/cards7.jpg" alt="Card image cap">
+          <div class="card_body">
+            <img class="img1" src="cards/EH (1).png">
+            <h4 class="card-title">IBM Data Analyst</h4>
+            <p class="card-text">IBM</p>
+            <br>
+            <br>
+            <p class="par1">Professional Certificates</p>
+            <a class="btn btn-info" style="font-weight:bolder;color:black;" href="course7.html">Courses</a>
+            <br>
+            <br>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-3" style="float:left">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="cards/cards8.jpg" alt="Card image cap">
+          <div class="card_body">
+            <img class="img1" src="cards/EH (1).png">
+            <h4 class="card-title">Sales Forces Development</h4>
+            <p class="card-text">Salesforce</p>
+            <br>
+            <br>
+            <p class="par1">Professional Certificates</p>
+            <a class="btn btn-info" style="font-weight:bolder;color:black;" href="course8.html">Courses</a>
+            <br>
+            <br>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    
+    <!--Third slide-->
+    <div class="carousel-item">
+
+      <div class="col-md-3" style="float:left">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="cards/cards9.jpg" alt="Card image cap">
+          <div class="card-body">
+            <img class="img1" src="cards/EH (1).png">
+            <h4 class="card-title">CyberSecurity Analyst</h4>
+            <p class="card-text">IBM</p>
+            <br>
+            <br>
+            <p class="par1">Professional Certificates</p>
+            <a class="btn btn-info" style="font-weight:bolder;color:black;" href="course9.html">Courses</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3" style="float:left">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="cards/cards10.jpg" alt="Card image cap">
+          <div class="card-body">
+            <img class="img1" src="cards/EH (1).png">
+            <h4 class="card-title">Full Stack Cloud Developer</h4>
+            <p class="card-text">IBM</p>
+            <br>
+            <br>
+            <p class="par1">Professional Certificates</p>
+            <a class="btn btn-info" style="font-weight:bolder;color:black;" href="course10.html">Courses</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3" style="float:left">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="cards/cards11.jpg" alt="Card image cap">
+          <div class="card-body">
+            <img class="img1" src="cards/EH (1).png">
+            <h4 class="card-title">Sales Operations</h4>
+            <p class="card-text">SalesForce</p>
+            <br>
+            <br>
+            <p class="par1">Professional Certificates</p>
+            <a class="btn btn-info" style="font-weight:bolder;color:black;" href="course11.html">Courses</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-3" style="float:left">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="cards/cards12.jpg" alt="Card image cap">
+          <div class="card-body">
+            <img class="img1" src="cards/EH (1).png">
+            <h4 class="card-title">Data Science with R</h4>
+            <p class="card-text">IBM</p>
+            <br>
+            <br>
+            <p class="par1">Professional Certificates</p>
+            <a class="btn btn-info" style="font-weight:bolder;color:black;" href="course12.html">Courses</a>
+          </div>
+        </div>
+      </div>
+    </div>  
+    </div>
+  </div>
+</div>
+<hr>
+<!--/.Carousel Wrapper-->
+<br>
+<br>
+<h4 class="headh3">100% Free</h4>
+<br>
+<h1 class="head">Start Learning with  Free Courses</h1>
+<p class="paraa">Free online courses from the world's top universites and companies</p>
+<div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+ 
+  <div class="controls-top">
+    <a class="btn-floating" href="#multi-item-example" data-slide="prev"><img src="https://img.icons8.com/material-sharp/64/000000/circled-left--v2.png"/></a>
+    <a class="btn-floating" href="#multi-item-example" data-slide="next"><img src="https://img.icons8.com/material-sharp/64/000000/circled-right.png"/></i></a>
+  </div>
+<!--Indicators-->
+  <ol class="carousel-indicators">
+    <li data-target="#multi-item-example" data-slide-to="1" class="active"></li>
+    <li data-target="#multi-item-example" data-slide-to="2"></li>
+    
+    
+  </ol>
+<!--/.Indicators-->
+
+<!--Slides-->
+<div class="carousel-inner" role="listbox">
+
+<!--First slide-->
+<div class="carousel-item active">
+
+  <div class="col-md-3" style="float:left">
+    <div class="card mb-2">
+     <img class="card-img-top"
+         src="cards/free/free1.jpg" alt="Card image cap">
+       <div class="cardbody">
+         <img class="img1" src="cards/EH (1).png">
+         <h4 class="cardtitle">Machine Learning</h4>
+         <p class="cardtext">Stanford University</p>
+         <br>
+         <br>
+       <a class="btn btn-primary"style="color:black; font-weight:bolder;">Courses</a>
+       </div>
+     </div>
+   </div>
+
+   <div class="col-md-3" style="float:left">
+     <div class="card mb-2">
+       <img class="card-img-top"
+         src="cards/free/free2.jpg" alt="Card image cap">
+       <div class="cardbody">
+         <img class="img1" src="cards/EH (1).png">
+         <h4 class="cardtitle">Science of Well Being</h4>
+         <p class="cardtext">Yale University</p>
+         <br>
+         <br>
+         <a class="btn btn-primary"style="color:black; font-weight:bolder;">Courses</a>
+       </div>
+     </div>
+   </div>
+
+   <div class="col-md-3" style="float:left">
+     <div class="card mb-2">
+       <img class="card-img-top"
+         src="cards/free/free3.jpg" alt="Card image cap">
+       <div class="cardbody">
+         <img class="img1" src="cards/EH (1).png">
+         <h4 class="cardtitle">Powerful Mental Tools</h4>
+         <p class="cardtext">Deep Teaching Solutions</p>
+         <br>
+         <br>
+         <a class="btn btn-primary"style="color:black; font-weight:bolder;">Courses</a>
+       </div>
+     </div>
+   </div>
+   
+    <div class="col-md-3" style="float:left">
+    <div class="card mb-2">
+       <img class="card-img-top"
+         src="cards/free/free4.jpg" alt="Card image cap">
+       <div class="cardbody">
+         <img class="img1" src="cards/EH (1).png">
+         <h4 class="cardtitle">Financial Markets</h4>
+         <p class="cardtext">Yale University</p>
+         <br>
+         <br>
+         
+         <a class="btn btn-primary"style="color:black; font-weight:bolder;">Courses</a>
+       </div>
+     </div>
+   </div>
+
+ </div>
+
+
+ <div class="carousel-item">
+
+  <div class="col-md-3" style="float:left">
+    <div class="card mb-2">
+      <img class="card-img-top"
+        src="cards/free/free5.jpg" alt="Card image cap">
+      <div class="cardbody">
+        <img class="img1" src="cards/EH (1).png">
+        <h4 class="cardtitle">English</h4>
+        <p class="cardtext">Stanford University</p>
+        <br>
+        <br>
+        <a class="btn btn-primary"style="color:black; font-weight:bolder;">Courses</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-3" style="float:left">
+    <div class="card mb-2">
+      <img class="card-img-top"
+        src="cards/free/free6.jpg" alt="Card image cap">
+      <div class="cardbody">
+        <img class="img1" src="cards/EH (1).png">
+        <h4 class="cardtitle">Intro to Philosophy</h4>
+        <p class="cardtext">Edinburgh University</p>
+        <br>
+        <br>
+        <a class="btn btn-primary"style="color:black; font-weight:bolder;">Courses</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-3" style="float:left">
+    <div class="card mb-2">
+      <img class="card-img-top"
+        src="cards/free/free7.jpg" alt="Card image cap">
+      <div class="cardbody">
+        <img class="img1" src="cards/EH (1).png">
+        <h4 class="cardtitle">Proper Health Food</h4>
+        <p class="cardtext">Stanford University</p>
+        <br>
+        <br>
+        <a class="btn btn-primary"style="color:black; font-weight:bolder;">Courses</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-3" style="float:left">
+    <div class="card mb-2">
+      <img class="card-img-top"
+        src="cards/free/free8.jpg" alt="Card image cap">
+      <div class="cardbody">
+        <img class="img1" src="cards/EH (1).png">
+        <h4 class="cardtitle">Cooking</h4>
+        <p class="cardtext">Yale University</p>
+        <br>
+        <br>
+        <a class="btn btn-primary" style="color:black; font-weight:bolder;">Courses</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+<hr>
+<br>
+<br>
+
+  <div class="ii">
+    <img class="im" src="collages.jpg">
+  </div>
+  <div class="">
+    <h1 class="headg1">World-class learning for you<br></h1>
+     <p class="p">Pursue a <b>promotion, a raise, or switch careers. 89% of learners</b><br> who have taken a course <b>report career benefits.</b><br>
+      <br>
+      - <u><b>EduHub</b> Learner Outcome Survey, India (2021)</u></p>
+      <a class="btn btn-primary" href="#courses" style="padding-top:5px; padding-bottom:10px; font-weight:bolder;">Explore</a>
+  </div>
+</div>
+</div>
+</div> 
+</div>
+</div>
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr>
+</div>
+
+<div class="zxcd" id="community">
+<section class="pt-5 pb-5">
+  <div class="container_1">
+      <div class="row">
+          <div class="col-8">
+              <h1 class="mb-3" style="padding-left:350px;">From the EduHUb Community  </h1>
+              <p style="padding-left:250px; font-weight:bolder">87+ millions people are already learning on EduHub</p>
+          </div>
+          <div class="col-8 text-right">
+              <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                  <i class="fa fa-arrow-left"></i>
+              </a>
+              <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
+                  <i class="fa fa-arrow-right"></i>
+              </a>
+          </div>
+          <div class="col-12">
+              <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+
+                  <div class="carousel-inner">
+                      <div class="carousel-item active">
+                          <div class="row">
+
+                              <div class="col-md-4 mb-3">
+                                  <div class="card" style="margin-left:100px; width:60%;border-style: none;">
+                                      <img class="img-fluid" style="border-radius:75%;" alt="100%x280" src="community/img1.jpg">
+                                      <div class="card-body" style="background-color:white;">
+                                          <h2 class="card-title" style="color:black;font-weight:bolder;">E.Naveen</h2>
+                                          <p style="font-weight:bolder;">Google IT Professional Certificate</p>
+                                          <p style="text-decoration:underline;text-decoration-color: blue;">Telangana</p>
+                                          <p class="card-text" style="color:black;">"Google's IT Support certificate allowed me to get a foot in the doors of roles I went after,thereby allowing me to convert an offer"</p>
+
+                                      </div>
+
+                                  </div>
+                              </div>
+                              <div class="col-md-4 mb-3">
+                                  <div class="card" style="margin-left:100px; width:60%; border-style:none;">
+                                      <img class="img-fluid" style="border-radius:75%;" alt="100%x280" src="community/img3.jfif">
+                                      <div class="card-body" style="background-color:white;">
+                                          <h2 class="card-title"  style="color:black;font-weight:bolder;">Manmeet G</h2>
+                                          <p style="font-weight:bolder;">IBM CyberSecurity Analyst</p>
+                                          <p style="text-decoration:underline;text-decoration-color: blue;">Gujrat</p>
+                                          <p class="card-text" style="color:black;">"The most amazing thing about this(IBM CyberSecurity Analyst) program is the certified and experinced instructors"</p>
+
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-4 mb-3">
+                                  <div class="card" style="margin-left:100px; width:60%; border-style:none;">
+                                      <img class="img-fluid" style="border-radius:75%;" alt="100%x280" src="community/img2.jfif">
+                                      <div class="card-body" style="background-color:white;">
+                                          <h2 class="card-title" style="color:black;font-weight:bolder;">Uma K</h2>
+                                          <p style="font-weight:bolder;">IBM Data Science Professional Certificate</p>
+                                          <p style="text-decoration:underline;text-decoration-color: blue;">Bihar</p>
+                                          <p class="card-text"style="color:black;">"The IBM Data Science Professinal Certificate is the cdrtified and experinced instructors. It has continued to open doors for me"</p>
+
+                                      </div>
+                                  </div>
+                              </div>
+
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                          <div class="row">
+
+                              <div class="col-md-4 mb-3">
+                                  <div class="card" style="margin-left:100px; width:60%; border-style:none;">
+                                      <img class="img-fluid" style="border-radius:75%;"alt="100%x280" src="community/img4.jfif">
+                                      <div class="card-body"style="background-color:white;">
+                                          <h2 class="card-title"style="color:black;font-weight:bolder;">Bharathan M</h2>
+                                          <p style="font-weight:bolder;">Deep Learning Specialization</p>
+                                          <p style="text-decoration:underline;text-decoration-color: blue;">Gujrat</p>
+                                          <p class="card-text"style="color:black;">"The knowledge I gained through the Machine Learning and Deep Learning courses helped me land an internship. It has continued to open doors for me"</p>
+
+                                      </div>
+
+                                  </div>
+                              </div>
+                              <div class="col-md-4 mb-3">
+                                  <div class="card" style="margin-left:100px; width:60%; border-style:none;">
+                                      <img class="img-fluid"style="border-radius:75%;" alt="100%x280" src="community/img5.jfif">
+                                      <div class="card-body"style="background-color:white;">
+                                          <h2 class="card-title"style="color:black;font-weight:bolder;" >Rohan Sharma</h2>
+                                          <p style="font-weight:bolder;">Full Stack Developers</p>
+                                          <p style="text-decoration:underline;text-decoration-color: blue;">Jaipur</p>                                          
+                                          <p class="card-text"style="color:black;">The knowledge I gained through the Full Stack Courses helped me land an internship.It has continued to open doors for me"</p>
+
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-4 mb-3">
+                                  <div class="card" style="margin-left:100px; width:60%; border-style:none;">
+                                      <img class="img-fluid" style="border-radius:75%;" alt="100%x280" src="community/img6.jfif">
+                                      <div class="card-body" style="background-color:white;">
+                                          <h2 class="card-title"style="color:black;font-weight:bolder;" >Rohit Sharma</h2>
+                                          <p style="font-weight:bolder;">Data Science</p>
+                                          <p style="text-decoration:underline;text-decoration-color: blue;">Mumbai</p>
+                                          <p class="card-text"style="color:black;">"The knowledge I gained through Data Science course helped me land an internship.It has coninued to open doors for me"</p>
+
+                                      </div>
+                                  </div>
+                              </div>
+
+                          </div>
+                      </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+</section>
+<hr>
+<div class="row" style="max-width:100%;">
+  <div class="column" style="background-color:white;padding-left:40px;">
+    <h2 class="you">EduHub For Learning</h2>
+    <p class="you1">Get world-class training and development<br> programs developed by top universities and companies.<br> All on EduHub Learners Community.</p>
+  </div>
+  <div class="column" style="background-color:white;">
+    <p class="qaz1">
+      <span class="qaz2">Thousands of institutions use EduHub Learners Community</span>
+    </p>
+    <ul class="list">
+      <li class="li1">
+        <div class="divi">
+          <div class="lazyload-wrapper">
+            <img src="institutions/img1.png" alt="Mindtree" style="max-width:90px; max-height:30px">
+          </div>
+        </div>
+      </li>
+      <li class="li1">
+        <img src="institutions/img2.png" alt="Reliance" style="max-width:90px; max-height:30px;">
+      </li>
+      <li class="li1">
+        <div class="divi">
+          <div class="lazyload-wrapper">
+            <img src="institutions/img3.png" alt="Tata" style="max-width:90px; max-height:30px;">
+          </div>
+        </div>
+      </li>
+      <li class="li1">
+        <img src="institutions/img4.jpg" alt="Axis Bank" style="max-width:90px; max-height:30px;">
+      </li>
+      <li class="li1">
+        <div class="divi">
+          <div class="lazyload-wrapper">
+            <img  src="institutions/img5.png" alt="General electric" style="max-width:90px; max-height:30px;">
+          </div>
+        </div>
+      </li>
+      <li class="li1">
+        <div class="divi">
+          <div class="lazyload-wrapper">
+            <img  src="institutions/img6.png" alt="Mahindra" style="max-width:90px; max-height:30px;">
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+</div>
+<hr>
+
+<div class="ii">
+  <img class="im" src="community/img7.png">
+</div>
+<div class="">
+  <h1 class="headg1">Take the next step<br> toward your personal<br> and professional goals<br> with EduHub.<br></h1>
+   <p class="p">Join now to receive personalized recommendations from the full EduHub catalog.</b><br>
+    <br>
+</div>
+</div>
+</div>
+</div> 
+</div>
+</div>
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <script src="script.js"></script>
+              <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
